@@ -11,8 +11,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
-from personal_information import Info
-
 
 class ReportingHelper:
 
@@ -21,7 +19,9 @@ class ReportingHelper:
         config_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),
                                    'config.yml')
 
-        if os.path.exists(config_file):
+        if not os.path.exists(config_file):
+            raise Exception('no such file of directory: ' + config_file)
+        else:
             # new style configuration
             # print("DEBUG: use new style configuration")
             # MODIFY: use utf-8 to encode:
@@ -46,12 +46,6 @@ class ReportingHelper:
                                      "name@example.com")  # str -> list
 
             self.cfg = Config
-        else:
-            # old style configuration
-            print(
-                "Warning: Old style config file (personal_information.py) will be deprecated in the future. \
-                Please use config file with yaml format.")
-            self.cfg = Info
 
     def _random_temp(self) -> str:
         """Generate random normal body temperature. [36.2, 36.7]
