@@ -5,7 +5,7 @@
     and this script will be executed for all users in the list on one click.
     No need to schedule a list of tasks!
 @Author: XAKK
-@Forked by: Gol3vka2001<gol3vka@163.com>
+@Forked by: Gol3vka<gol3vka@163.com>
 @Created date: 2020/12/25 - XAKK
 @Last modified date: 2022/09/27 - Gol3vka
 '''
