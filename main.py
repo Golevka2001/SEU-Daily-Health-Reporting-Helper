@@ -85,8 +85,7 @@ class ReportingHelper:
                             options=options)
 
             driver.get(
-                "https://newids.seu.edu.cn/authserver/login?service=http%3A%2F%2Fehall.seu.edu.cn%2Fqljfwapp2%2Fsys%2FlwReportEpidemicSeu%2Findex.do%3Ft_s%3D1594447890898%26amp_sec_version_%3D1%26gid_%3DSTZiVXZjRnhVSS9VNERWaFNNT1hXb2VNY3FHTHFVVHMwRC9jdTdhUlllcXVkZDNrKzNEV1ZxeHVwSEloRVQ4NHZFVzRDdHRTVlZ1dEIvczVvdzVpVGc9PQ%26EMAP_LANG%3Dzh%26THEME%3Dindigo%23%2FdailyReport"
-            )
+                'http://ehall.seu.edu.cn/appShow?appId=5821102911870447')
             driver.find_element(By.ID, 'username').send_keys(
                 self.cfg.user_id[i])  # student ID
             driver.find_element(By.ID, 'password').send_keys(
