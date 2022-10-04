@@ -7,7 +7,7 @@
 @Author: XAKK
 @Forked by: Gol3vka<gol3vka@163.com>
 @Created date: 2020/12/25 - XAKK
-@Last modified date: 2022/09/27 - Gol3vka
+@Last modified date: 2022/10/04 - Gol3vka
 '''
 
 from email_sending_module import EmailSendingModule
@@ -114,7 +114,7 @@ class ReportingHelper:
                     By.XPATH,
                     '//*[@class="bh-dialog-btn bh-bg-primary bh-color-primary-5"]'
                 ).click()
-                status = 'successful'
+                status = 'successful' + '\ntemperature:' + str(temperature)
             except Exception as e:
                 status = 'failed'
                 print(str(e))
@@ -136,7 +136,7 @@ class ReportingHelper:
                 if self.cfg.notify_failure_only[i] == 'no':
                     mail = {
                         'subject': '[NOTIFICATION]',
-                        'body': (status + '\ntemperature:' + str(temperature))
+                        'body': status
                     }
                     self.email.config.load_from_parameters(
                         sender_information, receivers_information, mail,
