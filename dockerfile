@@ -5,7 +5,7 @@ LABEL version=0.1
 
 SHELL ["/bin/bash", "-c"]
 ENV CHROME_DRIVER_PATH=/usr/bin/chromedriver
-ENV WORKDIR=/workspace/SEU-health-reporting-helper
+ENV WORKDIR=/workspace/SEU-Daily-Health-Reporting-Helper
 ENV TZ=Asia/Shanghai
 WORKDIR ${WORKDIR}
 
@@ -34,7 +34,7 @@ RUN \
     rm chromedriver_linux64.zip && \
     # clean
     rm -rf /var/cache/apt && \
-    rm -rf /var/lib/apt/lists/* 
+    rm -rf /var/lib/apt/lists/*
 
 # copy files
 COPY ["requirements.txt", "${WORKDIR}"]
