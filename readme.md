@@ -1,8 +1,16 @@
 # 东南大学每日健康上报打卡助手 :alarm_clock:
 
-*@分支作者：Gol3vka
-@原项目作者：XAKK
-@原项目地址：<https://github.com/XAKK/SEU-health-reporting-helper.git>*
+*@分支作者：Gol3vka*  \
+*@原项目作者：XAKK*  \
+*@原项目地址：<https://github.com/XAKK/SEU-health-reporting-helper.git>*
+
+<br/>
+
+:hand: **稍等!**  \
+如果您只有在 Windows 下运行的需求，且不想花时间在环境配置上，在这里为您准备了 Windows 下一键部署的版本噢！
+[:door: 传送门](https://github.com/Golevka2001/SEU-Daily-Health-Reporting-Helper-One-Click-Version)
+
+---
 
 这是一个每日健康上报自动化脚本，在正确配置之后，可以实现每日自动打卡，支持同时为多位用户上报（分支功能），并通过邮件告知打卡结果。
 
@@ -15,6 +23,7 @@
 ---
 
 ## 目录
+
 - [东南大学每日健康上报打卡助手 :alarm_clock:](#东南大学每日健康上报打卡助手-alarm_clock)
   - [目录](#目录)
   - [安全性](#安全性)
@@ -209,6 +218,8 @@ PATH=/usr/local/bin/:/usr/bin:/usr/sbin
 
 推荐程度：⭐️⭐️⭐️
 
+（如果您不想花时间在环境配置上，在这里为您准备了 Windows 下一键部署的版本噢！[:door: 传送门](https://github.com/Golevka2001/SEU-Daily-Health-Reporting-Helper-One-Click-Version)）
+
 #### 安装 Python 解释器
 
 在命令行中输入 ```python``` ，若有版本信息显示，则已有 Python 解释器，跳过。若显示为未知命令，则需要安装 Python 解释器。
@@ -217,7 +228,7 @@ PATH=/usr/local/bin/:/usr/bin:/usr/sbin
 
 #### 安装 ChromeDriver
 
-下载与本机 Chrome 浏览器版本相对应的 ChromeDriver，并移动至 SEU-health-reporting-helper 目录下。
+下载与本机 Chrome 浏览器版本相对应的 ChromeDriver，并移动至 SEU-Daily-Health-Reporting-Helper 目录下。
 
 您可能需要 [ChromeDriver 镜像站](https://registry.npmmirror.com/binary.html?path=chromedriver/)。后期升级 Chrome 需要替换对应的 ChromeDriver。
 
