@@ -252,10 +252,10 @@ run.bat
 借助一台在预定义时间处于运行状态的 Windows 机器，以及 Windows 任务计划程序，可以无人干预的情况下每日自动打卡。
 
 **打开任务计划程序**：按下 `Win` + `R` ，输入 `taskschd.msc`
-![taskschd](readme.assets/taskschd.png)
+![taskschd](README.assets/taskschd.png)
 
 **创建任务**：右键【任务计划程序库】，点击【创建任务】
-![create_task](readme.assets/create_task.png)
+![create_task](README.assets/create_task.png)
 
 **常规**：
 
@@ -264,7 +264,7 @@ run.bat
 3. 选择【不管用户是否登录都要运行】
 4. 勾选【使用最高权限运行】
 
-![general](readme.assets/general.png)
+![general](README.assets/general.png)
 
 **触发器**：
 
@@ -273,16 +273,16 @@ run.bat
 3. 配置随机延迟时间（可选）
 4. 也可以根据自身需求定义多个触发器
 
-![triggers](readme.assets/triggers.png)
-![new_trigger](readme.assets/new_trigger.png)
+![triggers](README.assets/triggers.png)
+![new_trigger](README.assets/new_trigger.png)
 
 **操作**：
 
 1. 点击【新建】
 2. 选择启动程序（项目目录下的 `run.bat` 脚本）
 
-![actions](readme.assets/actions.png)
-![new_action](readme.assets/new_action.png)
+![actions](README.assets/actions.png)
+![new_action](README.assets/new_action.png)
 
 完成上面配置后，便新建了一个计划任务。
 
