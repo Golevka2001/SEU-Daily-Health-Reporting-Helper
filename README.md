@@ -8,6 +8,7 @@
 
 :hand: **稍等!**  \
 如果您只有在 Windows 下运行的需求，且不想花时间在环境配置上，在这里为您准备了 Windows 下一键部署的版本噢！
+
 [:door: 传送门](https://github.com/Golevka2001/SEU-Daily-Health-Reporting-Helper-One-Click-Version)
 
 ---
