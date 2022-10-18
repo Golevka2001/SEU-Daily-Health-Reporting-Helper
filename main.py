@@ -7,7 +7,7 @@
 @Author: XAKK
 @Forked by: Gol3vka<gol3vka@163.com>
 @Created date: 2020/12/25 - XAKK
-@Last modified date: 2022/10/04 - Gol3vka
+@Last modified date: 2022/10/17 - Gol3vka
 '''
 
 from email_sending_module import EmailSendingModule
@@ -32,7 +32,7 @@ class ReportingHelper:
                                    'config.yml')
 
         if not os.path.exists(config_path):
-            raise Exception('no such file of directory: ' + config_path)
+            raise Exception('[ERROR]No such file of directory: ' + config_path)
         else:
             with open(config_path, 'r', encoding='utf-8') as config_file:
                 config = yaml.safe_load(config_file.read())
@@ -70,7 +70,7 @@ class ReportingHelper:
                 self.cfg.notification) == len(self.cfg.notify_failure_only) ==
                 len(self.cfg.to_addr)):
             raise Exception(
-                'check the config file, all lists should have the same number of items.'
+                '[ERROR]Please check the config file, all lists should have the same number of items.'
             )
 
         options = Options()
@@ -143,9 +143,9 @@ class ReportingHelper:
                         server_information)
                     result = self.email.send_emails()
                     if result[1] == 0:
-                        print('successful sending')
+                        print('[INFO]Successful sending')
                     else:
-                        print('failed sending')
+                        print('[INFO]Failed sending')
                 elif status == 'failed':
                     mail = {'subject': '[NOTIFICATION]', 'body': status}
                     self.email.config.load_from_parameters(
@@ -153,16 +153,16 @@ class ReportingHelper:
                         server_information)
                     result = self.email.send_emails()
                     if result[1] == 0:
-                        print('successful sending')
+                        print('[INFO]Successful sending')
                     else:
-                        print('failed sending')
+                        print('[INFO]Failed sending')
 
             driver.close()
-            print(time.strftime('%Y-%m-%d %H:%M:%S -', time.localtime()),
+            print('[INFO]' + time.strftime('%Y-%m-%d %H:%M:%S -', time.localtime()),
                   status)
 
 
 if __name__ == '__main__':
-    print(time.strftime('%Y-%m-%d %H:%M:%S -', time.localtime()), 'start')
+    print('[INFO]' + time.strftime('%Y-%m-%d %H:%M:%S -', time.localtime()), 'start')
     rh = ReportingHelper()
     rh.run()
