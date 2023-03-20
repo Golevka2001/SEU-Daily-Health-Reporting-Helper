@@ -1,5 +1,11 @@
 # 东南大学每日健康上报打卡助手 :alarm_clock:
 
+---
+
+## :warning: 疫情时代产物，已废弃 :warning:
+
+---
+
 *@分支作者：Gol3vka*  \
 *@原项目作者：XAKK*  \
 *@原项目地址：<https://github.com/XAKK/SEU-health-reporting-helper.git>*
@@ -28,6 +34,7 @@
 ## 目录
 
 - [东南大学每日健康上报打卡助手 :alarm_clock:](#东南大学每日健康上报打卡助手-alarm_clock)
+  - [:warning: **疫情时代产物，已废弃** :warning:](#warning-疫情时代产物已废弃-warning)
   - [目录](#目录)
   - [安全性](#安全性)
   - [使用说明](#使用说明)
